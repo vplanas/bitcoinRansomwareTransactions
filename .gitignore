@@ -1,0 +1,15 @@
+.vs/
+.vscode/
+# Archivos de caché de Visual Studio
+.vsidx
+.vsconfig
+*.vspscc
+*.vssscc
+
+# Archivos temporales
+*.tmp
+*.log
+*.cache
+
+misc/
+bitcoin_trace_results.csv
