@@ -1,0 +1,2 @@
+https://mlab.engineering.nyu.edu/ransomware-public-data/
+Huang, D. Y., Aliapoulios, M. M., Li, V. G., Invernizzi, L., Bursztein, E., McRoberts, K., Levin, J., Levchenko, K., Snoeren, A. C., & McCoy, D. (2018). Tracking Ransomware End-to-end. 2018 IEEE Symposium on Security and Privacy (SP), 618-631. https://doi.org/10.1109/SP.2018.00047

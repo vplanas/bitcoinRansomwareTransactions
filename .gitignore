@@ -11,7 +11,7 @@
 *.log
 *.cache
 #datos demasiado grandes
-datos\mix\BABD-13.csv
+datos/mix/BABD-13.csv
 #otros archivos a ignorar
 misc/
 bitcoin_trace_results.csv
