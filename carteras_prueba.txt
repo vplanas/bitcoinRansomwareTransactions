@@ -1,3 +1,33 @@
 15mGM5Hkjic47WnRQ52F9vBfwnr5K1XSbk
 15b6W5AYpGbNtvGb9DJHZahDNVaiUVeEGd -> después de acumular se pela de de 1 a 3 btc por transaccion
 1NYv14NGVUh4CqPKWp656XatnxxGzww5NF (https://hdanny.org/ransomware-public-data/cerber-locky-addresses.csv.txt)
+
+notas:
+BitcoinHeist Ransomware Dataset (Kaggle): https://www.kaggle.com/datasets/sapere0/bitcoinheist-ransomware-dataset
+
+Bitcoin Address Subgraph Dataset (BASD-8): https://www.kaggle.com/datasets/lemonx/basd8
+
+Dataset académico de comportamientos de direcciones Bitcoin: https://arxiv.org/abs/2204.05746
+
+Dataset Bitcoin Heist Ransomware Address (UCI): https://archive.ics.uci.edu/ml/datasets/BitcoinHeistRansomwareAddressDataset
+
+Ransomwhere - direcciones de ransomware actualizadas: https://www.opensanctions.org/datasets/ransomwhere/
+
+Bitcoin Abuse Database: https://www.bitcoinabuse.com
+
+Dataset direcciones Lazarus Group (FBI): https://www.opensanctions.org/datasets/us_fbi_lazarus_crypto/
+
+Bitcoin wallets con actividades fraudulentas (Kaggle): https://www.kaggle.com/datasets/larysa21/bitcoin-wallets-data-with-fraudulent-activities
+
+Identificación de direcciones en mercados darknet (IEEE): https://ieeexplore.ieee.org/document/8751391/
+
+Real-CATS: Dataset de direcciones criminales: https://github.com/sjdseu/Real-CATS
+
+Informe del FBI sobre criptomonedas robadas (noticia oficial): https://www.fbi.gov/news/press-releases/fbi-identifies-cryptocurrency-funds-stolen-by-dprk
+
+Reporte Crypto Crime 2025 Chainalysis: https://www.chainalysis.com/blog/2025-crypto-crime-report-introduction/
+
+Herramientas OSINT para investigación darknet y criptomonedas:
+https://infosecwriteups.com/top-12-osint-tools-for-the-dark-web-cfcf88c8fbe0
+https://blog.sociallinks.io/top-7-osint-tools-for-dark-web-investigations-in-2023/
+https://osintteam.blog/top-open-source-intelligence-osint-tools-for-dark-web-bb9995bba489
