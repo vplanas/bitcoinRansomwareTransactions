@@ -100,6 +100,8 @@ def process_wallets_File(df, archivo_salida):
 
 # Carga tu CSV
 df = pd.read_csv('targets.simple.csv')
+# Primer las mas modernas
+df = df.sort_values('last_change', ascending=False)
 
 # Ejecuta el proceso
 process_wallets_File(df, 'direcciones_activas.csv')

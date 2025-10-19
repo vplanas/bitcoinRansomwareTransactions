@@ -78,12 +78,15 @@ def analyze_transactions(address_data, target_address):
     Procesa el conjunto de transacciones asociadas a una dirección Bitcoin
     para extraer las salidas (outputs) relevantes hacia otras direcciones.
     
+    Solo analiza transacciones donde target_address aparece en los
+    inputs, es decir, donde la dirección está GASTANDO fondos (salientes reales).
+    
     Aplica filtros para excluir:
     - Salidas hacia la misma dirección (change outputs)
     - Salidas con valor cero o nulo
     - Outputs sin dirección asignada
     
-    La API devuelve los monton en Satoshis, la conversión de satoshis a BTC se realiza dividiendo por 10^8 según
+    La API devuelve los montos en Satoshis, la conversión de satoshis a BTC se realiza dividiendo por 10^8 según
     
     Args:
         address_data (dict): Respuesta JSON de la API conteniendo transacciones
@@ -105,6 +108,20 @@ def analyze_transactions(address_data, target_address):
         # Conversión de timestamp UNIX a formato legible para análisis temporal
         tx_time = datetime.fromtimestamp(tx.get('time', 0)).strftime('%Y-%m-%d %H:%M:%S')
 
+        # VERIFICACIÓN CRÍTICA: comprobar que target_address está GASTANDO en esta tx
+        # Iteramos sobre los inputs para verificar si la dirección objetivo es el origen
+        is_spending = False
+        for input_item in tx.get('inputs', []):
+            prev_out = input_item.get('prev_out', {})
+            input_address = prev_out.get('addr')
+            if input_address == target_address:
+                is_spending = True
+                break
+        
+        # Solo procesar outputs si la dirección está gastando fondos (transacciones salientes)
+        if not is_spending:
+            continue
+
         # Análisis de cada output de la transacción
         for output in tx.get('out', []):
             dest_address = output.get('addr')
@@ -124,11 +141,12 @@ def analyze_transactions(address_data, target_address):
                     'to_address': dest_address,
                     'value_btc': value_btc,
                     'value_satoshis': value_satoshis,
-                    # Comision si está disponible, convertida a BTC
+                    # Comisión si está disponible, convertida a BTC
                     'tx_fee': tx.get('fee', 0) / 100000000.0 if tx.get('fee') else 0.0
                 })
 
     return outgoing_addresses, transaction_details
+
 
 
 def recursive_trace(start_address, max_depth=2, visited=None, all_transactions=None, current_depth=0):
