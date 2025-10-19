@@ -1,0 +1,2 @@
+https://github.com/cablej/showing-the-receipts
+Jack Cable, Ian W Gray, Damon McCoy. (2024). Showing the Receipts: Understanding the Modern Ransomware Ecosystem. Symposium on Electronic Crime Research. https://arxiv.org/pdf/2408.15420
