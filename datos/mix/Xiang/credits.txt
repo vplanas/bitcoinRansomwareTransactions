@@ -1,0 +1,2 @@
+https://www.kaggle.com/datasets/lemonx/babd13
+Xiang, Y., Lei, Y., Bao, D., Li, T., Yang, Q., Liu, W., Ren, W., & Choo, K.-K. R. (2024). BABD: A Bitcoin Address Behavior Dataset for Pattern Analysis. IEEE Transactions on Information Forensics and Security, 19, 2171-2185. https://doi.org/10.1109/TIFS.2023.3347894

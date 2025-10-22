@@ -1,0 +1,3 @@
+https://github.com/sjdseu/Real-CATS
+Shi, J., Duan, C., Lei, H., & Wang, L. (2025). Real-CATS: A Practical Training Ground for Emerging Research on Cryptocurrency Cybercrime Detection (No. arXiv:2501.15553). arXiv. https://doi.org/10.48550/arXiv.2501.15553
+

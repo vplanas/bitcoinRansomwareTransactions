@@ -27,6 +27,8 @@ Informe del FBI sobre criptomonedas robadas (noticia oficial): https://www.fbi.g
 
 Reporte Crypto Crime 2025 Chainalysis: https://www.chainalysis.com/blog/2025-crypto-crime-report-introduction/
 
+https://www.comunidad.madrid/noticias/2023/01/04/comunidad-madrid-desarrolla-herramienta-rastrear-cibercrimen-bitcoins
+
 Herramientas OSINT para investigación darknet y criptomonedas:
 https://infosecwriteups.com/top-12-osint-tools-for-the-dark-web-cfcf88c8fbe0
 https://blog.sociallinks.io/top-7-osint-tools-for-dark-web-investigations-in-2023/
